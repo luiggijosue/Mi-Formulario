@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulario de contacto</title>
+  </head>
+  <body>
+    <div class="caja">
+      <h1>Contacto</h1>
+
+      <form action="https://formsubmit.co/luiggi.lj@icloud.com" method="POST">
+        <!-- Opciones de FormSubmit -->
+        <input type="hidden" name="_template" value="table" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://luiggijosue.github.io/TU_REPO/recibido.html"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+
+        <!-- Campos del formulario -->
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Tu nombre"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="tu@email.com"
+          required
+        />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          placeholder="Escribe tu mensaje aquí..."
+          required
+        ></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+  </body>
+</html>
